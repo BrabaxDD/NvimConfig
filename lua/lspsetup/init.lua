@@ -1,3 +1,5 @@
+require("lspconfig").html.setup({})
+require("lspconfig").bashls.setup({})
 require("lspconfig").pylsp.setup({})
 require("lspconfig").efm.setup {               
     on_attach = on_attach,    
