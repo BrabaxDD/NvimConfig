@@ -27,6 +27,7 @@ vim.keymap.set({"n","i","x","s","o","t","c"},"^","<esc>")
 vim.keymap.set("n","<leader>w",":bn<cr>")
 vim.keymap.set("n","<leader>b",":bp<cr>")
 vim.keymap.set("n","<leader>x",":bd<cr>")
+vim.keymap.set("n","<leader>n","new<cr>")
 --Window Navigation
 vim.keymap.set("n","<C-h>","<C-w>h")
 vim.keymap.set("n","<C-j>","<C-w>j")
