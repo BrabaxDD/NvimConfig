@@ -28,6 +28,9 @@ vim.keymap.set("n","<leader>w",":bn<cr>")
 vim.keymap.set("n","<leader>b",":bp<cr>")
 vim.keymap.set("n","<leader>x",":bd<cr>")
 vim.keymap.set("n","<leader>n","new<cr>")
+--commenting in python
+vim.keymap.set("v","<leader>c",":norm i#<cr>")
+vim.keymap.set("v","<leader>u",":norm x<cr>")
 --Window Navigation
 vim.keymap.set("n","<C-h>","<C-w>h")
 vim.keymap.set("n","<C-j>","<C-w>j")
