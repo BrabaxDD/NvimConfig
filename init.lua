@@ -5,9 +5,19 @@ require("lazy").setup(require("pluginloader"))
 require("mason").setup()
 require("mason-lspconfig").setup()
 require("config.settings")
---require("lazy").setup({{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}})
 require("config.lsp")
 require("plugins.cmp.config")
 require("plugins.lspconfig.config")
 require("plugins.bufferline.config")
 require("lspsetup")
+require('nvim-treesitter.configs').setup {
+  ensure_installed = {"python", "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline" },
+  sync_install = false,
+  auto_install = true,
+  ignore_install = {},
+  highlight = {
+    enable = true,
+    disable = {},
+    additional_vim_regex_highlighting = false,
+  },
+}
